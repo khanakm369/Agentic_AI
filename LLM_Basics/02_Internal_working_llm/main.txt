@@ -1,0 +1,47 @@
+Step-by-Step Internal Working
+1️⃣ Tokenization
+2️⃣ Embedding Layer
+3️⃣ Positional Encoding
+4️⃣ Transformer Blocks (Core Brain 🔥)
+
+🔁 Inside Each Transformer Block
+  This is repeated N times (like 12, 24, 96 layers)
+    (A) Self-Attention
+    (B) Multi-Head Attention
+    (C) Add & Normalize
+    (D) Feed Forward Network (FFN)
+    (E) Again Add & Normalize
+  🔁 Repeat this block many times
+
+🎯 Final Step — Output Layer
+
+Final vectors → converted to probabilities
+
+🔁 Generation Loop
+
+LLM works like this:
+
+Input → tokens
+Predict next token
+Append it
+Repeat
+
+👉 That’s how ChatGPT generates sentences
+
+⚡ Full Pipeline Summary
+Text
+→ Tokenization
+→ Embeddings
+→ + Positional Encoding
+→ Transformer Layers (Attention + FFN)
+→ Linear + Softmax
+→ Next Token
+→ Repeat
+
+
+https://projector.tensorflow.org/
+
+- Very Important website to understand Vector Embedding and how it uses vector data and maps and forms a symantic meanong
+ (Its more like write a program to make words meaning understandable to system)
+ 
+ this website has everything like an everything on the map
